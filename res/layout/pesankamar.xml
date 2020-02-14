@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+        android:id="@+id/Mulaitgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="31dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:text="Mulai Tanggal :" />
+
+    <EditText
+        android:id="@+id/etstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Mulaitgl"
+        android:layout_below="@+id/Mulaitgl"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Akhirtgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tenddate"
+        android:layout_below="@+id/tenddate"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btpesan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Akhirtgl"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:background="#25ab31"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"        
+        android:layout_marginTop="72dp"
+        android:text="PESAN" />
+
+    <TextView
+        android:id="@+id/tenddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etstart"
+        android:layout_below="@+id/etstart"
+        android:layout_marginTop="38dp"
+        android:text="Akhir Tanggal :"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    
+
+</RelativeLayout>

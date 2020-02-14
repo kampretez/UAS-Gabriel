@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	
+	<TextView
+        android:id="@+id/namaroom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textSize="15sp"
+        android:text="Nama Ruangan"
+        android:textColor="#2c3e50"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic" />
+
+	<TextView
+	    android:id="@+id/deskripsi"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textStyle="bold"
+	    android:textSize="18sp"
+	    android:layout_marginLeft="240dp"
+	    android:layout_marginTop="20dp"
+	    android:text="Harga" />
+
+	<TextView
+	    android:id="@+id/kapasitas"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="13sp"
+	    android:textStyle="italic"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="20dp"
+	    android:text="Kapasitas" />
+    
+</LinearLayout>

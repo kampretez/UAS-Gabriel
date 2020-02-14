@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+        android:id="@+id/tkamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"        
+        android:layout_marginTop="18dp"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:text="Nama Kamar" />
+
+    <TextView
+        android:id="@+id/tharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tkamar"
+        android:layout_below="@+id/tkamar"
+        android:layout_marginTop="14dp"
+        android:text="2 juta"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tkapasitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tharga"
+        android:layout_below="@+id/tharga"
+        android:layout_marginTop="18dp"
+        android:textSize="12sp"
+        android:text="Maksimal 2 orang" />
+
+    <Button
+        android:id="@+id/btpesan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tkapasitas"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="67dp"
+        android:background="#25ab31"
+        android:text="PESAN" />
+    
+</RelativeLayout>

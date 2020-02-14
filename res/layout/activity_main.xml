@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context=".MainActivity" xmlns:android1="http://schemas.android.com/apk/res/android">
+     <TextView 
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:typeface="serif"
+        android:textStyle="italic"        
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RHotel Booking"
+        android:typeface="serif"
+        android:textStyle="italic"        
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android1:layout_below="@+id/title1"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:text="Silakan Login Sebagai Admin" />
+
+    <EditText
+        android1:id="@+id/edusername"
+        android1:layout_width="250dp"
+        android1:layout_height="40dp"
+        android1:layout_below="@+id/title"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="42dp"
+        android1:ems="10"
+        android1:hint="Masukkan Username Anda"        
+        android1:textSize="16dp" />
+
+    <EditText
+        android1:id="@+id/edpassword"
+        android1:layout_width="250dp"
+        android1:layout_height="40dp"
+        android1:layout_alignLeft="@+id/edusername"
+        android1:layout_below="@+id/edusername"
+        android1:layout_marginTop="28dp"
+        android1:ems="10"
+        android1:hint="Masukkan Password Anda"        
+        android1:textSize="16dp" />
+    
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/edpassword"
+        android:layout_below="@+id/showpass"
+        android:layout_marginTop="17dp"
+        android:layout_alignLeft="@+id/showpass"
+        android:background="#25ab31"
+        android:text="LOGIN"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btlogin"
+        android:layout_below="@+id/btlogin"
+        android:layout_marginTop="18dp"
+        android:text="Daftar sebagai member baru?"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android1:id="@+id/showpass"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/edpassword"
+        android1:layout_below="@+id/edpassword"
+        android1:text="Lihat Password"
+        android1:textColor="#bccdc2" />
+    
+</RelativeLayout>
